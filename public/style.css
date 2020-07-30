@@ -1,0 +1,72 @@
+body{
+}
+.container{
+  float:left;
+}
+
+hr{
+  opacity: 0.8;
+}
+
+.btn{
+  padding:0.2rem;
+}
+.title{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  float:left;
+}
+.file-actions{
+  float: right;
+}
+
+.file-list{
+  list-style-type: none; 
+  padding: 0.3rem; 
+}
+.file-list li{
+  padding: 0.1rem;
+  display: inline;
+}
+
+.action-buttons{
+  
+}
+
+.urlbar input[type=text]{
+  width: 100%;
+  font-size: 12px;
+}
+
+.activity table{
+  font-size: 13px;
+  border: none;
+  width: 100%;
+  height: 200px;
+}
+
+.activity table thead{
+  border-bottom: 1px solid black;
+  border-color: rgb(185, 179, 179);
+}
+.activity table td{
+  border: 0;
+  width: 100px;
+}
+.log-ref{
+  background-color: rgb(172, 166, 166);
+}
+
+tbody tr td:first-child {
+  width: 40px;
+  min-width: 5px;
+  max-width: 5px;
+  word-break: break-all;
+  border-right: 1px solid black;
+  border-color: rgb(185, 179, 179);
+}
+
+.fa{
+  
+}
