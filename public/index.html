@@ -34,8 +34,7 @@
     
     <div class="action-buttons ml-3">
       <button class='btn btn-sm' ><i class="fa fa-play fa-sm"></i></button>
-      <button class='btn btn-sm btn-danger mr-3' style='float: right;'><i class="fa fa-circle fa-sm" aria-hidden="true"></i>REC</button>
-
+      <a href = 'http://localhost:3000/record' class='btn btn-sm btn-danger mr-3' style='float: right;' id = 'record'><i class="fa fa-circle fa-sm" aria-hidden="true"></i>REC</a>
     </div>
     <div class="clearfix"></div>
     <hr>
@@ -97,5 +96,17 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
   <!-- <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script> -->
+
+<!-- 
+  <script>
+    $(document).ready(function(){
+        $("#record").click(function(){
+            $.get("http://localhost:3000/record", () => {
+              console.log('Recording has been started');
+            });
+        });
+    });
+  </script> -->
+
 </body>
 </html>
