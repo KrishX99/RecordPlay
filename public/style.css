@@ -39,17 +39,41 @@ hr{
   font-size: 12px;
 }
 
+.activity{
+  height: 270px;
+  overflow: auto;
+}
+.activity::-webkit-scrollbar {width: 6px;}
+.activity::-webkit-scrollbar-track-piece {
+  background: #ccc;
+  border-right: 6px solid #fff;
+  border-left: 6px solid #fff;
+}
+.activity::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 8px;
+}
+
+
+
 .activity table{
   font-size: 13px;
   border: none;
   width: 100%;
-  height: 200px;
 }
 
 .activity table thead{
   border-bottom: 1px solid black;
   border-color: rgb(185, 179, 179);
+  
 }
+
+.activity table thead th{
+  position: sticky;
+  top: 0;
+  background: rgba(233, 230, 230, 0.267);
+}
+
 .activity table td{
   border: 0;
   width: 100px;
@@ -66,6 +90,13 @@ tbody tr td:first-child {
   border-right: 1px solid black;
   border-color: rgb(185, 179, 179);
 }
+
+tbody tr td:nth-child(2) , tbody tr td:nth-child(3) {
+  word-break: break-all;
+  border-right: 1px solid black;
+  border-color: rgb(185, 179, 179);
+}
+
 
 .fa{
   
