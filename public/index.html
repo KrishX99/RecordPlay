@@ -37,13 +37,24 @@
     
     <div class="action-buttons ml-3">
       <input type = 'image' src = './icons/play.svg' data-toggle="tooltip" data-placement="top" title="Run test" onclick="playing()" class='btn btn-sm' >
-      <input type = 'image' src = './icons/clock.svg' class = 'btn btn-sm' data-toggle="tooltip" data-placement="top" title="Test excution speed">
+      <input type = 'image' src = './icons/clock.svg' class = 'btn btn-sm' data-toggle="tooltip" data-placement="top" title="Test excution speed" onclick="toggleSlider()" >
+      <i class="arrow down" data-toggle="tooltip" data-placement="top" title="Test excution speed" onclick="toggleSlider()" >
+
+      </i>
+
       <button id="rec" data-toggle="tooltip" data-placement="top" title="Start recording" class='btn btn-sm btn-danger mr-3' onclick="recording()" style='float: right;display: block;'>
         <i class="fa fa-circle fa-sm" aria-hidden="true"></i>
         REC</button>
       <button id="stop" class='btn btn-sm btn-danger mr-3' data-toggle="tooltip" data-placement="top" title="Stop recording" onclick="recording()" style='float: right;display: none;'>
         <i class="fa fa-stop-circle"></i>
       STOP</button>
+      
+      <!--Test Execution Speed Slider -->
+      <div class="slider_none" id="rangeinput">
+        <span class = 'ml-3'>Slow</span>
+        <input type = 'range'  min="1" max="250" value="1" onchange="changeExecutionTime()" class = '' title="slider" onfocusout = "toggleSlider()">
+        <span class = 'ml-3'>Fast</span>
+      </div>
     </div>
     <div class="clearfix"></div>
     <hr>
