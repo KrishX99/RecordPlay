@@ -6,7 +6,14 @@ body{
 }
 
 hr{
-  opacity: 0.8;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  background-color:black;
+  opacity:0.1
 }
 
 .btn{
@@ -31,19 +38,24 @@ hr{
   display: inline;
 }
 .action-buttons{
-  
+  font-size:10px;
+  clear:both
 }
+
 
 .urlbar input[type=text]{
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
+  border-radius: 3px;
+  border:none;
+  border: grey solid 1px;
+  padding-left: 10px;
 }
 
 .activity table{
   font-size: 13px;
   border: none;
   width: 100%;
-  /*height: 200px;*/
 }
 
 .activity table thead{
@@ -63,6 +75,9 @@ hr{
 }
 .log-ref{
   background-color: rgb(172, 166, 166);
+}
+.log-ref button:hover{
+  border: grey solid 2px;
 }
 
 tbody tr td:first-child {
@@ -218,11 +233,12 @@ input[type=image]{
   display:flex;
   transform: rotate(90deg);
   position: absolute;
-  width:120px;
   background-color: white;
-  margin-left:-15px;
-  margin-top: 50px;
+  margin-left:-60px;
+  margin-top: 85px;
   z-index: 1;
+  border:grey solid 1px;
+  border-radius: 5px;
 }
 
 .slider_block span{
@@ -332,4 +348,43 @@ input[type=range]:focus::-ms-fill-upper {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.project{
+}
+
+.logs{
+  border-top: grey solid 1px; 
+}
+
+
+.options{
+  margin-left: 1rem;
+}
+
+.options label{
+    display: inline-block;
+    width:100px;
+    text-align: left;
+
+}
+.options input[type=text],select{
+  font-size: 15px;
+  border-radius: 3px;
+  border:none;
+  border: grey solid 1px;
+  opacity: 0.7;
+  width:400px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.options button{
+  font-size:13px;
+  padding: 3px 10px 3px 10px;
+  border:none;
+  border: grey solid 1px;
+  border-radius: 4px;
+  opacity: 0.7;
+  width: 36px
 }
